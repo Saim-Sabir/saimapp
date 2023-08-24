@@ -11,7 +11,6 @@ const invoicerouter = require('./routes/invoiceRoute.js');
 const awardrouter = require("./routes/awardRoute.js");
 const messagerouter = require("./routes/messageRoute.js");
 const orderrouter = require("./routes/orderRoute.js");
-const contentwriterouter = require("./routes/contentwritingRoute.js");
 
 
 app.use(cors());
@@ -25,7 +24,6 @@ app.use('/withdraw', withdrawrouter);
 app.use('/billing', billingrouter);
 app.use('/message', messagerouter);
 app.use('/orders', orderrouter);
-app.use('/content', contentwriterouter);
 app.use('/uploads', express.static('./uploads'));
 
 
